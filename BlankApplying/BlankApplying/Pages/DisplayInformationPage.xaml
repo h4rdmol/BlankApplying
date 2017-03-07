@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlankApplying.Pages.DisplayInformationPage">
+   <StackLayout>
+      <Label x:Name ="LabelFName"
+              Text="Valerrii"/>
+      <Label x:Name ="LabelSName"
+             Text="Rotermel"/>
+      <Label x:Name ="LabelCountry"
+             Text="Ukraine"/>
+      <Label x:Name ="LabelCity"
+             Text="Kiev"/>
+      <Label x:Name ="LabelUniversty"
+             Text="KPI asdsa d"/>
+  
+  </StackLayout>
+</ContentPage>

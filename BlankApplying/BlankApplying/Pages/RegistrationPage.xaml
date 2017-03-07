@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlankApplying.Pages.RegistrationPage">
+  <StackLayout>
+    <Entry x:Name = "FirstName_Entry"
+           Placeholder="Введите Ваше имя"
+            />
+    <Entry x:Name = "SecondName_Entry"
+           Placeholder="Введите Вашу фамилию"
+             />
+    <SearchBar x:Name = "Countries_SearchBar"
+               Placeholder="Страна"
+               SearchButtonPressed="Countries_SearchBar_OnSearchButtonPressed"
+               TextChanged="Countries_SearchBar_OnTextChanged"
+               Focused="Countries_SearchBar_OnFocused"
+               IsEnabled="false"
+               />
+    <ListView x:Name = "CountiresListView"
+              ItemSelected="CountiresListView_OnItemSeleceted"
+              IsVisible ="false"/>
+    <SearchBar x:Name = "Cities_SearchBar"
+               Placeholder="Город"
+               SearchButtonPressed="Cities_SearchBar_OnSearchButtonPressed"
+               TextChanged="Cities_SearchBar_OnTextChanged"
+               Focused="Cities_SearchBar_OnFocused"
+               IsEnabled="false"
+               />
+    <ListView x:Name = "CitiesListView"
+              ItemSelected="CitiesListView_OnItemSelected"
+              IsVisible ="false"/>
+    <SearchBar x:Name = "Universities_SearchBar"
+               Placeholder="Универститет"
+               SearchButtonPressed="Universities_SearchBar_OnSearchButtonPressed"
+               TextChanged="Universities_SearchBar_OnTextChanged"
+               Focused="Universities_SearchBar_OnFocused"
+               IsEnabled ="false"
+               />
+    <ListView x:Name = "UniversitiesListView"
+              ItemSelected="UniversitiesListView_OnItemSelected"
+              IsVisible ="false"/>
+    <Button x:Name ="ApplyButton"
+            Text="Заполнить бланк"
+            Clicked="OnClicked"
+            IsEnabled="false"
+            />
+
+  </StackLayout>
+</ContentPage>
