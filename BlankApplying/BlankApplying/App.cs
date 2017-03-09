@@ -17,7 +17,7 @@ namespace BlankApplying
             {
                 BarBackgroundColor = Color.Gray,
                 BarTextColor = Color.White,
-                Title = "BlankApplying app for RadaCode"
+                Title = "BlankApplying app"
             };
             User user = new User();
            
